@@ -1,7 +1,13 @@
 import React from 'react'
 import { FaLongArrowAltRight } from "react-icons/fa";
-
+import { SiChinasouthernairlines } from 'react-icons/si';
+import Country from '../../pages/Country';
+import { useNavigate } from 'react-router';
 const HeroSection = () => {
+  const navigate=useNavigate();
+  const gotoCountries=()=>{
+    navigate('/countries');
+  }
   return (
     <main className="hero-section main">
           <div className="container grid grid-two-cols">
@@ -13,7 +19,7 @@ const HeroSection = () => {
                 Discover the history, culture, and beauty of every nation. Sort,
                 search, and filter through countries to find the details you need.
               </p>
-              <button className="btn btn-darken btn-inline bg-white-box">
+              <button className="btn btn-darken btn-inline bg-white-box" onClick={gotoCountries}>
                 Start Exploring <FaLongArrowAltRight />
               </button>
             </div>

@@ -2,7 +2,7 @@
   {
     "icon": "MdPlace",
     "title": "Find us",
-    "details": "Pune, Maharashtra"
+    "details": "India"
   },
   {
     "icon": "IoCallSharp",
@@ -12,6 +12,6 @@
   {
     "icon": "TbMailPlus",
     "title": "Mail us",
-    "details": "contact@kodyfier.com"
+    "details": "xyz@gmail.com"
   }
 ]
