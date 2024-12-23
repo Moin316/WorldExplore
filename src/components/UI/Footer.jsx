@@ -12,7 +12,7 @@ const Footer = () => {
   };
   return (
     <footer className="footer-section">
-      <div className="container grid grid-three-cols">
+      <div className="container grid grid-three-cols pl-10">
         {footerapi.map((curData, index) => {
           const { icon, title, details } = curData;
           return (

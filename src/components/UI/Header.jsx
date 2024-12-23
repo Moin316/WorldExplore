@@ -20,16 +20,24 @@ const Header = () => {
           <nav className={show ? "menu-mobile" : "menu-web"}>
             <ul>
               <li>
-                <NavLink to="/">Home</NavLink>
+                <NavLink to="/" onClick={handleButtonToggle}>
+                  Home
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/countries">Countries</NavLink>
+                <NavLink to="/countries" onClick={handleButtonToggle}>
+                  Countries
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/about">About</NavLink>
+                <NavLink to="/about" onClick={handleButtonToggle}>
+                  About
+                </NavLink>
               </li>
               <li>
-                <NavLink to="/contact">Contact</NavLink>
+                <NavLink to="/contact" onClick={handleButtonToggle}>
+                  Contact
+                </NavLink>
               </li>
             </ul>
           </nav>
@@ -39,7 +47,7 @@ const Header = () => {
             </button>
           </div>
         </div>
-        </div>
+      </div>
     </header>
   );
 }
